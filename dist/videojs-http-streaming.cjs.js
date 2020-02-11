@@ -1,4 +1,4 @@
-/*! @name @videojs/http-streaming @version 1.11.0-alpha.1 @license Apache-2.0 */
+/*! @name @videojs/http-streaming @version 1.11.0-alpha.1-smashcut @license Apache-2.0 */
 'use strict';
 
 Object.defineProperty(exports, '__esModule', { value: true });
@@ -4313,7 +4313,7 @@ function wrapTerminate(worker, objURL){
 
 var TransmuxWorker = new shimWorker("./transmuxer-worker.worker.js", function (window, document) {
   var self = this;
-  /*! @name @videojs/http-streaming @version 1.11.0-alpha.1 @license Apache-2.0 */
+  /*! @name @videojs/http-streaming @version 1.11.0-alpha.1-smashcut @license Apache-2.0 */
 
   var transmuxerWorker = function () {
     /**
@@ -15322,7 +15322,7 @@ function (_videojs$EventTarget) {
 
 var Decrypter = new shimWorker("./decrypter-worker.worker.js", function (window, document) {
   var self = this;
-  /*! @name @videojs/http-streaming @version 1.11.0-alpha.1 @license Apache-2.0 */
+  /*! @name @videojs/http-streaming @version 1.11.0-alpha.1-smashcut @license Apache-2.0 */
 
   var decrypterWorker = function () {
 
@@ -18718,7 +18718,7 @@ var reloadSourceOnError = function reloadSourceOnError(options) {
   initPlugin(this, options);
 };
 
-var version = "1.11.0-alpha.1";
+var version = "1.11.0-alpha.1-smashcut";
 
 videojs.use('*', function (player) {
   return {

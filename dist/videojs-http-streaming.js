@@ -1,4 +1,4 @@
-/*! @name @videojs/http-streaming @version 1.11.0-alpha.1 @license Apache-2.0 */
+/*! @name @videojs/http-streaming @version 1.11.0-alpha.1-smashcut @license Apache-2.0 */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('global/document'), require('global/window'), require('video.js'), require('xmldom')) :
   typeof define === 'function' && define.amd ? define(['exports', 'global/document', 'global/window', 'video.js', 'xmldom'], factory) :
@@ -10808,7 +10808,7 @@
 
   var TransmuxWorker = new shimWorker("./transmuxer-worker.worker.js", function (window, document) {
     var self = this;
-    /*! @name @videojs/http-streaming @version 1.11.0-alpha.1 @license Apache-2.0 */
+    /*! @name @videojs/http-streaming @version 1.11.0-alpha.1-smashcut @license Apache-2.0 */
 
     var transmuxerWorker = function () {
       /**
@@ -23282,7 +23282,7 @@
 
   var Decrypter$1 = new shimWorker("./decrypter-worker.worker.js", function (window, document) {
     var self = this;
-    /*! @name @videojs/http-streaming @version 1.11.0-alpha.1 @license Apache-2.0 */
+    /*! @name @videojs/http-streaming @version 1.11.0-alpha.1-smashcut @license Apache-2.0 */
 
     var decrypterWorker = function () {
 
@@ -26678,7 +26678,7 @@
     initPlugin(this, options);
   };
 
-  var version = "1.11.0-alpha.1";
+  var version = "1.11.0-alpha.1-smashcut";
 
   var version$1 = "5.5.1";
 
