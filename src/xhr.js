@@ -20,7 +20,8 @@ const xhrFactory = function() {
   const xhr = function XhrFunction(options, callback) {
     // Add a default timeout for all hls requests
     options = mergeOptions({
-      timeout: 45e3
+      timeout: 45e3,
+      preprocessHttpRequest: videojs.Hls.xhr.preprocessHttpRequest
     }, options);
 
     // Allow an optional user-specified function to modify the option
