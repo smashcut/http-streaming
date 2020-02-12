@@ -8128,6 +8128,9 @@ var TransmuxWorker = new shimWorker("./transmuxer-worker.worker.js", function (w
           case 0x09:
             event.nalUnitType = 'access_unit_delimiter_rbsp';
             break;
+
+          default:
+            break;
         } // This triggers data on the H264Stream
 
 
@@ -15351,7 +15354,7 @@ var Decrypter = new shimWorker("./decrypter-worker.worker.js", function (window,
     }
 
     var inheritsLoose = _inheritsLoose;
-    /*! @name @videojs/vhs-utils @version 1.3.0 @license MIT */
+    /*! @name @videojs/vhs-utils @version 1.2.1 @license MIT */
 
     /**
      * @file stream.js
