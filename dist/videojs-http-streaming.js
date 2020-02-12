@@ -3,7 +3,7 @@
   typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('global/document'), require('global/window'), require('video.js'), require('xmldom')) :
   typeof define === 'function' && define.amd ? define(['exports', 'global/document', 'global/window', 'video.js', 'xmldom'], factory) :
   (global = global || self, factory(global.httpStreaming = {}, global.document, global.window, global.videojs, global.window));
-}(this, function (exports, document, window$3, videojs, xmldom) { 'use strict';
+}(this, (function (exports, document, window$3, videojs, xmldom) { 'use strict';
 
   document = document && document.hasOwnProperty('default') ? document['default'] : document;
   window$3 = window$3 && window$3.hasOwnProperty('default') ? window$3['default'] : window$3;
@@ -242,7 +242,7 @@
     return url;
   };
 
-  /*! @name @videojs/vhs-utils @version 1.2.1 @license MIT */
+  /*! @name @videojs/vhs-utils @version 1.3.0 @license MIT */
 
   /**
    * @file stream.js
@@ -8781,8 +8781,6 @@
               pmt.table = probe$1.ts.parsePmt(packet);
             }
             break;
-          default:
-            break;
         }
 
         // Found the pat and pmt, we can stop walking the segment
@@ -8837,8 +8835,6 @@
               }
             }
             break;
-          default:
-            break;
         }
 
         if (endLoop) {
@@ -8881,8 +8877,6 @@
                 endLoop = true;
               }
             }
-            break;
-          default:
             break;
         }
 
@@ -8980,8 +8974,6 @@
               }
             }
             break;
-          default:
-            break;
         }
 
         if (endLoop && result.firstKeyFrame) {
@@ -9023,8 +9015,6 @@
                   endLoop = true;
                 }
             }
-            break;
-          default:
             break;
         }
 
@@ -9212,8 +9202,6 @@
             if (result.audio.length === 0) {
               delete result.audio;
             }
-            break;
-          default:
             break;
         }
       }
@@ -14635,9 +14623,6 @@
             case 0x09:
               event.nalUnitType = 'access_unit_delimiter_rbsp';
               break;
-
-            default:
-              break;
           } // This triggers data on the H264Stream
 
 
@@ -18737,8 +18722,6 @@
         }
 
         result.push(seiNal);
-        break;
-      default:
         break;
       }
     }
@@ -23328,7 +23311,7 @@
       }
 
       var inheritsLoose = _inheritsLoose;
-      /*! @name @videojs/vhs-utils @version 1.2.1 @license MIT */
+      /*! @name @videojs/vhs-utils @version 1.3.0 @license MIT */
 
       /**
        * @file stream.js
@@ -27622,4 +27605,4 @@
 
   Object.defineProperty(exports, '__esModule', { value: true });
 
-}));
+})));

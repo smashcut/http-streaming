@@ -67,7 +67,7 @@
     "m3u8-parser": "4.4.2",
     "mpd-parser": "0.10.0",
     "mux.js": "5.5.1",
-    "video.js": "smashcut/video.js#smashcut/develop"
+    "video.js": "^6 || ^7"
   },
   "devDependencies": {
     "@gkatsev/rollup-plugin-bundle-worker": "^1.0.2",
